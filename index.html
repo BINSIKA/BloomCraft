@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomCraft - Premium Online Flower Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">🌸</div>
+                <h1>BloomCraft</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Flowers</a>
+                <a href="#occasions" class="nav-link">Occasions</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search flowers..." class="search-input">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <button class="cart-btn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+            
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span>❤️</span>
+                    Fresh flowers delivered daily
+                </div>
+                <h1 class="hero-title">
+                    Beautiful
+                    <span class="highlight">Flowers</span>
+                    for Every Moment
+                </h1>
+                <p class="hero-description">
+                    Discover our handcrafted floral arrangements made with the freshest blooms. 
+                    Perfect for celebrations, expressions of love, or brightening someone's day.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Shop Now</button>
+                    <button class="btn btn-secondary">View Collections</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Fresh Delivery</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5★</div>
+                        <div class="stat-label">Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Beautiful flower arrangement">
+                <div class="hero-badge-floating">
+                    <div class="badge-content">
+                        <div class="badge-icon">✓</div>
+                        <div class="badge-text">
+                            <div class="badge-title">Free Delivery</div>
+                            <div class="badge-subtitle">On orders over $50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <h3>Shop by Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="roses">Roses</button>
+                    <button class="filter-btn" data-category="mixed">Mixed</button>
+                    <button class="filter-btn" data-category="lilies">Lilies</button>
+                    <button class="filter-btn" data-category="sunflowers">Sunflowers</button>
+                    <button class="filter-btn" data-category="tropical">Tropical</button>
+                    <button class="filter-btn" data-category="tulips">Tulips</button>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h3>Shop by Occasion</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-occasion="all">All</button>
+                    <button class="filter-btn" data-occasion="anniversary">Anniversary</button>
+                    <button class="filter-btn" data-occasion="birthday">Birthday</button>
+                    <button class="filter-btn" data-occasion="wedding">Wedding</button>
+                    <button class="filter-btn" data-occasion="sympathy">Sympathy</button>
+                    <button class="filter-btn" data-occasion="valentines">Valentine's</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fresh Collections</h2>
+                <p>Handpicked flowers arranged with love and care for every special occasion</p>
+            </div>
+            
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose BloomCraft?</h2>
+                    <p>With over 15 years of experience in floral design, we're passionate about creating beautiful arrangements that tell your story and express your emotions perfectly.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">🚚</div>
+                            <div class="feature-content">
+                                <h3>Same-Day Delivery</h3>
+                                <p>Fresh flowers delivered within hours of your order</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🌱</div>
+                            <div class="feature-content">
+                                <h3>Freshness Guarantee</h3>
+                                <p>7-day freshness guarantee or your money back</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🎨</div>
+                            <div class="feature-content">
+                                <h3>Expert Florists</h3>
+                                <p>Professionally trained designers create each arrangement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional florist at work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about our flowers or need help with a custom arrangement? We're here to help!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>9067554560</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <h3>Email</h3>
+                                <p>hello@bloomcraft.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Nagercoil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <div class="logo">🌸</div>
+                        <h3>BloomCraft</h3>
+                    </div>
+                    <p>Creating beautiful moments with fresh, handcrafted floral arrangements. Spreading joy one bouquet at a time.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Shop All Flowers</a></li>
+                        <li><a href="#">Wedding Flowers</a></li>
+                        <li><a href="#">Sympathy Flowers</a></li>
+                        <li><a href="#">Corporate Gifts</a></li>
+                        <li><a href="#">Subscription Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and flower care tips</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BloomCraft. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Your Cart</h2>
+                <button class="close-btn" onclick="closeCart()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems" class="cart-items">
+                    <div class="empty-cart">
+                        <div class="empty-cart-icon">🛒</div>
+                        <p>Your cart is empty</p>
+                        <small>Add some beautiful flowers to get started</small>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0.00</span></strong>
+                </div>
+                <button class="btn btn-primary checkout-btn" onclick="checkout()">
+                    💳 Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content product-modal-content">
+            <button class="close-btn" onclick="closeProductModal()">&times;</button>
+            <div id="productModalContent">
+                <!-- Product details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
